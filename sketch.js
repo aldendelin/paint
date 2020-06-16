@@ -1,4 +1,4 @@
-var database,position,line;
+var database,position;
 
 function setup(){
    createCanvas(500,500);
@@ -13,8 +13,10 @@ function draw(){
     drawSprites();
 }
 
+
+
 function mouseDragged(){
-    line = createSprite(mouseX,mouseY,10,10);
+    var line = createSprite(mouseX,mouseY,10,10);
     writePosition(mouseX,mouseY);
 }
 
