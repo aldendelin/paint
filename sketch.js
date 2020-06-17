@@ -32,8 +32,8 @@ function readPosition(data){
 
 function writePosition(x,y){
     database.ref('line/position').set({
-        'x' : position.x,
-        'y' : position.y
+        'x' : x,
+        'y' : y
     })
    
 }
